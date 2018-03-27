@@ -11,12 +11,10 @@ ECHO Wscript.Sleep 900                                    >>"%TempVBSFile%"
 CSCRIPT //nologo "%TempVBSFile%"
 
 @echo off
-color %%7
+color 0B
 title RYU
-start:
 for /F "tokens=*delims=" %%A in  ( ryu.TXT) do    ECHO  %%A 
    
 
 
  pause >nul
-start cmd.exe
